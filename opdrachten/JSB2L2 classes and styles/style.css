@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    
+
+}
+
+.blauw {
+    font-size: 18px;
+    color: blue;
+}
+
+.rood {
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: red;
+}
+.groen {
+    font-size: 2em;
+    font-family: fantasy;
+    color: green;
+}
+.bruin {
+    font-size: 1cm;
+    font-family: cursive;
+    color: brown;
+}
+.geel {
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: yellow;
+}
