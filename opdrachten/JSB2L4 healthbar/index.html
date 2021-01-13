@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+    <body>
+        <meter id="12cm" min="0" max="10" value="10"></meter>      
+        <input type="button" id="button" value="val aan" ></input>
+        <h1 id="text">..</h1>
+        
+        <script>
+            var health = 10;
+            var damage = 1;
+            document.getElementById("button").addEventListener("click",(e)=>{
+               health -= damage;
+               document.getElementById("12cm").value= health;
+               document.getElementById("12cm").className= "GREEN"
+               if (health < 5) {
+                   document.getElementById("12cm").className= "orange"
+
+               }
+               if (health < 2) {
+                document.getElementById("12cm").className= "rood" 
+               }
+
+               if (health == 0) {
+                   document.getElementById("text").innerHTML= "game over"
+                   document.getElementById("button").value= "restart"
+               }
+
+               if (health == -1) {
+                   health = 10;
+                   document.getElementById("text").innerHTML= ".."
+                   document.getElementById("button").value= "val aan"
+
+               }
+               
+
+
+            
+            });       
+        </script>
+    </body>
+</html>
